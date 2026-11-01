@@ -1,0 +1,270 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Little Comfort for Ashfiya 🌷</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="floating-bg" id="floatingBg"></div>
+
+ <nav>
+    <div class="logo">🌷 Ashfiya's Corner</div>
+    <button id="musicBtn">♫ Play Music</button>
+
+    <audio id="backgroundMusic" loop>
+        <source src="music/our-song.mp3" type="audio/mpeg">
+    </audio>
+</nav>
+
+    <!-- WELCOME -->
+    <section class="hero">
+        <p class="small-heading">A LITTLE PLACE MADE JUST FOR YOU</p>
+
+        <h1>Hey, Ashfiya! <br>
+            <span>My favourite Gurl ♡</span>
+        </h1>
+
+        <p class="intro">
+            I know you need a little extra comfort today.
+            So I made this tiny site just for you my love💗.
+        </p>
+
+        <a href="#mood" class="main-btn">Let's Start 🌸</a>
+
+        <div class="flowers">🌷 🦋 🌸 🦋 🌷</div>
+    </section>
+
+
+    <!-- MOOD CHECK -->
+    <section id="mood">
+
+        <p class="small-heading">FIRST THINGS FIRST</p>
+        <h2>How are you feeling today?</h2>
+
+        <div class="mood-grid">
+
+            <button onclick="showMood('tired')">
+                😴 <br> Tired
+            </button>
+
+            <button onclick="showMood('sad')">
+                🥺 <br> A little sad
+            </button>
+
+            <button onclick="showMood('cranky')">
+                😤 <br> Irritated
+            </button>
+
+            <button onclick="showMood('happy')">
+                😒 <br> Angryy 
+            </button>
+
+        </div>
+
+        <div id="moodMessage" class="message-box">
+            Pick how you feeling today ♡
+        </div>
+
+    </section>
+
+
+    <!-- LOVE LETTER -->
+    <section id="letter">
+
+        <p class="small-heading">SOMETHING FROM ME</p>
+        <h2>A little letter for you 💌</h2>
+
+        <div class="envelope" onclick="openLetter()">
+            <div class="envelope-icon">💌</div>
+            <p>Tap to open your letter</p>
+        </div>
+
+        <div id="letterContent" class="letter-content">
+
+            <h3>Dear Wifeyyy,</h3>
+
+            <p>
+                Hey, pretty Girl. I know these period days can be
+                uncomfortable, exhausting and sometimes just
+                so annoying like you can litrally kill me.
+            </p>
+
+            <p>
+                So here's your reminder that you don't have
+                to be productive, cheerful or energetic all
+                the time.
+            </p>
+
+            <p>
+                Rest when you need to. Take things slowly.
+                Have your favourite food(icecream) and be extra caring
+                to yourself.
+            </p>
+
+            <p>
+                I might not be able to magically make every
+                uncomfortable moment disappear, but I can
+                always remind you that you're cared for.
+                and i am always with you jaanuu🪷
+            </p>
+
+            <h3>Sending you lots of love ♡</h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- CARE PACKAGE -->
+    <section id="care">
+
+        <p class="small-heading">A LITTLE SURPRISE</p>
+        <h2>Choose Any one of them, MY januuu🌷</h2>
+
+        <div class="care-grid">
+
+            <div class="care-card" onclick="careMessage('Me')">
+                <div>🙋‍♂️</div>
+                <h3>Me???</h3>
+            </div>
+
+            <div class="care-card" onclick="careMessage('chocolate')">
+                <div>🍫</div>
+                <h3>Dark chocolate?</h3>
+            </div>
+
+            <div class="care-card" onclick="careMessage('flowers')">
+                <div>💐</div>
+                <h3>Flowers?</h3>
+            </div>
+
+            <div class="care-card" onclick="careMessage('rest')">
+                <div>🧸</div>
+                <h3>Rest time?</h3>
+            </div>
+
+        </div>
+
+        <div id="careMessage" class="message-box" style="display:none;">
+        </div>
+
+    </section>
+
+    </section>
+    <section class="icecream-section">
+
+    <h2>🍦 A Little Ice Cream Therapy</h2>
+    <p>Pick your favourite flavour, Meri motuuu bacchii 💗</p>
+
+    <div class="icecream-container">
+        <div class="icecream-card" onclick="chooseIceCream('Chocolate')">
+            🍫
+            <h3>Chocolate</h3>
+        </div>
+
+        <div class="icecream-card" onclick="chooseIceCream('Strawberry')">
+            🍓
+            <h3>Strawberry</h3>
+        </div>
+
+        <div class="icecream-card" onclick="chooseIceCream('Vanilla')">
+            🍦
+            <h3>Vanilla</h3>
+        </div>
+
+        <div class="icecream-card" onclick="chooseIceCream('Butterscotch')">
+            🍯
+            <h3>Butterscotch</h3>
+        </div>
+    </div>
+
+    <h3 id="icecreamMessage">
+        I am gonnaa EATTT you after your periods Hottyy👅🤤! 
+        So be readyy jannuu 👀!
+    </h3>
+</section>
+<section class="voice-section">
+    <div class="voice-card">
+
+        <div class="voice-icon">🎙️💗</div>
+
+        <h2>A Little Voice Note For You</h2>
+
+        <p>
+            Sometimes words are better when you hear them.
+            So here's my little message for you, My jannuu 💗.
+        </p>
+
+        <audio id="voiceNote" preload="metadata">
+            <source src="audio/my-voice-note.mp3" type="audio/mpeg">
+        </audio>
+
+        <button id="voiceButton" onclick="toggleVoiceNote()">
+            ▶ Play 
+        </button>
+
+        <p class="voice-caption">
+            Listen whenever you miss hearing my voice. 💕
+      </p> and btw sorry for the dog voice in background😭 </p>
+        </p>
+
+    </div>
+</section>
+
+    <!-- MINI GAME -->
+    <section id="game">
+
+        <p class="small-heading">A LITTLE DISTRACTION</p>
+        <h2>Catch some love! 💗</h2>
+
+        <p>Tap the hearts before they disappear.</p>
+
+        <div class="game-area" id="gameArea"></div>
+
+        <h3>Score: <span id="score">0</span></h3>
+
+        <button class="main-btn" onclick="startGame()">
+            Start playing!
+        </button>
+
+    </section>
+
+
+    <!-- SECRET -->
+    <section id="secret">
+
+        <p class="small-heading">PSSST... A SECRET</p>
+        <h2>One last surprise 🔐</h2>
+
+        <p>There's something hidden here just for you. </p>
+        <p>I know your name,I just wanna know if you know your name ??👀</p>
+        <p>Type your lovely name to unlock the final msg from your bhonduu💝</p>
+
+        <input id="secretInput"
+               placeholder="Enter here..."
+               type="text">
+
+        <button class="main-btn" onclick="unlockSecret()">
+            Unlock ♡
+        </button>
+
+        <div id="secretMessage" class="message-box">
+        </div>
+
+    </section>
+
+
+    <footer>
+        Made with lots of love for My Girl Ashfiya ♡
+        <p>Remember to be gentle with yourself. 🌷</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
